@@ -24,10 +24,10 @@ jobs:
 
       - name: Generate static files
         run: |
-          python app.py  # Ensure this command runs your Flask app to generate the HTML files
+          python app.py  # Ensure this runs without errors
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./templates  # Ensure this directory contains index.html
+          publish_dir: ./templates  # Directory where index.html is located
