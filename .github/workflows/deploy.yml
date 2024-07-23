@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # or whatever your main branch is named
+      - main
 
 jobs:
   deploy:
@@ -15,20 +15,19 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.x'  # Ensure this matches your Python version
+          python-version: '3.x'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Build HTML files
+      - name: Generate static files
         run: |
-          # Assuming your Flask app generates static files in 'build' directory
-          python app.py  # or any command to generate your HTML files
+          python app.py  # Ensure this command runs your Flask app to generate the HTML files
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./templates  # Replace with your actual directory with HTML files
+          publish_dir: ./templates  # Ensure this directory contains index.html
