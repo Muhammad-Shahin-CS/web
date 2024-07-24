@@ -3,81 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: url('https://www.example.com/background.jpg') no-repeat center center fixed;
+            background: url('{{ url_for('static', filename='background.jpg') }}') no-repeat center center fixed;
             background-size: cover;
-            color: #fff;
-            text-align: center;
-            padding: 0;
-            margin: 0;
-        }
-
-        .container {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            margin: 50px auto;
-            border-radius: 10px;
-            max-width: 600px;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin: 0.2em 0;
-            color: #ff6347;
-            text-shadow: 2px 2px #000;
-        }
-
-        p {
-            font-size: 1.5em;
-            margin: 0.5em 0;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin: 10px 0;
-        }
-
-        ul li a {
-            text-decoration: none;
-            color: #00ced1;
-            font-size: 1.2em;
-            border: 2px solid #00ced1;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-
-        ul li a:hover {
-            background: #00ced1;
             color: #000;
-            border-color: #000;
-        }
-
-        .logo {
-            width: 100px;
-            height: 100px;
-            margin: 20px auto;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <div class="nav-center">
+            <a href="{{ url_for('index') }}">Index</a>
+            <a href="#">Portfolio</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Projects</a>
+            <div class="dropdown">
+                <button class="dropbtn">Social</button>
+                <div class="dropdown-content">
+                    <a href="https://www.linkedin.com/in/muhammad-shahin-c-s/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/Muhammad-Shahin-CS" target="_blank">GitHub</a>
+                    <a href="https://twitter.com/your-twitter" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com/your-instagram" target="_blank">Instagram</a>
+                    <a href="https://www.whats.com/y 9656234530m" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
-        <img src="https://www.example.com/logo.png" alt="Logo" class="logo">
-        <h1>Welcome to My Personal Website</h1>
-        <p>My name is Muhammad Shahin CS</p>
-        <ul>
-            <li><a href="https://github.com/Muhammad-Shahin-CS">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/muhammad-shahin-c-s/">LinkedIn</a></li>
-            <li><a href="https://www.twitter.com/yourprofile">Twitter</a></li>
-            <li><a href="https://www.youtube.com/yourprofile">Youtube</a></li> 
-        </ul>
+        <div class="header">
+            <div class="profile-container">
+                <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Photo" class="profile-photo">
+                <div class="profile-info">
+                    <h1>HEY, I'M MUHAMMAD SHAHIN CS</h1>
+                    <p>As an AI developer, I specialize in creating innovative solutions through advanced machine learning and computer vision techniques.</p>
+                    <p>Explore my work and see how I'm transforming the field of artificial intelligence with innovative solutions and cutting-edge technology.</p>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>Machine Learning</li>
+                <li>Computer Vision</li>
+                <li>Deep Learning</li>
+                <li>Python</li>
+                <li>TensorFlow & PyTorch</li>
+                <li>Data Analysis</li>
+            </ul>
+        </div>
+        <div class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Bird Detection:</strong> Developed a model to detect bird species in videos.</li>
+                <li><strong>Cat and Dog Classifier:</strong> Created a classifier for distinguishing between cats and dogs.</li>
+                <li><strong>Ship Detection:</strong> Implemented an object detection system for identifying ships in satellite images.</li>
+                <li><strong>Predictive Insights:</strong> A web application for predictive analytics using Flask.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="social-box">
+        <a href="https://www.linkedin.com/in/muhammad-shahin-c-s/" target="_blank"><img src="{{ url_for('static', filename='linkedin.svg') }}" alt="LinkedIn" class="social-icon"></a>
+        <a href="https://github.com/Muhammad-Shahin-CS" target="_blank"><img src="{{ url_for('static', filename='github.svg') }}" alt="GitHub" class="social-icon"></a>
+        <a href="https://twitter.com/your-twitter" target="_blank"><img src="{{ url_for('static', filename='twitter.svg') }}" alt="Twitter" class="social-icon"></a>
+        <a href="https://twitter.com/your-   yputunbe   " target="_blank"><img src="{{ url_for('static', filename='youtube.svg') }}" alt="Twitter" class="social-icon"></a>
+
+        <a href="https://www.instagram.com/your-instagram" target="_blank"><img src="{{ url_for('static', filename='instagram.svg') }}" alt="Instagram" class="social-icon"></a>
+        <a href="https://www.whats.com/y 9656234530m" target="_blank"><img src="{{ url_for('static', filename='whatsapp.svg') }}" alt="WhatsApp" class="social-icon"></a>
     </div>
 </body>
 </html>
