@@ -140,10 +140,11 @@ nav {
 }
 
 .social-box {
+
     background: rgb(200, 200, 200); 
     position: fixed;
     right: 20px;
-    top: 20%;
+    top: 3%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
