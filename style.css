@@ -150,11 +150,7 @@ nav {
 }
 
 .social-icon {
-    width: 4px;
-    height: 4px;
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
 }
-  
-.social-icon img {
-    width: 24px; /* Adjust size as needed */
-    height: 24px; /* Adjust size as needed */
-}
+   
