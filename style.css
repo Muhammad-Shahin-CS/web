@@ -1,25 +1,24 @@
 body {
-    background: url('static/images/background.jpg') no-repeat center center fixed;
+    background: url('images/background.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #000; /* Set text color to black */
-    margin-bottom: 20px; 
 }
 
 nav {
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 10px 0;
-    text-align: center; 
+    text-align: center;
 }
 
 .nav-center {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px; /* Adjust space between items as needed */ 
+    gap: 15px; /* Adjust space between items as needed */
 }
 
 .nav-center a {
@@ -27,7 +26,6 @@ nav {
     padding: 10px 20px;
     text-decoration: none;
     display: inline-block;
-    border-radius: 7px;  
 }
 
 .nav-center a:hover {
@@ -36,27 +34,24 @@ nav {
 
 .dropdown {
     position: relative;
-    display: inline-block; 
+    display: inline-block;
 }
 
 .dropbtn {
-    background-color:rgb(77, 77, 77);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    border-radius: 7px;  
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(77, 77, 77);
+    background-color: rgba(0, 0, 0, 0.9);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    border-radius: 10px;  
-    /* margin-top: 11.9px;  */
 }
 
 .dropdown-content a {
@@ -79,9 +74,9 @@ nav {
 }
 
 .container {
-    width:80%;
+    width: 80%;
     margin: auto;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .header {
@@ -99,8 +94,8 @@ nav {
 .profile-photo {
     width: 200px;
     height: 200px;
-    border-radius:50%;
-    border: 6px solid #000; /* Add border to profile image */
+    border-radius: 50%;
+    border: 5px solid #000; /* Add border to profile image */
 }
 
 .profile-info {
@@ -124,8 +119,8 @@ nav {
     color: #000;
     padding: 20px;
     margin-top: 20px;
-    border-radius: 18px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .skills h2, .projects h2 {
@@ -138,7 +133,7 @@ nav {
 }
 
 .skills li, .projects li {
-    background: #f1f1f1;
+    background: #f4f4f4;
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 4px;
@@ -150,8 +145,8 @@ nav {
     padding: 10px;
     display: flex;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-    border-radius: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 4px; 
     background: rgb(237, 237, 237); 
     position: fixed;
     right: 20px;
