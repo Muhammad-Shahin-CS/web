@@ -148,13 +148,8 @@ nav {
     flex-direction: column;
     gap: 10px;
 }
-
-.social-icon {
-    width: 5px;
-    height: 20px;
-}
-  
+ 
 .social-icon img {
-    width: 24px; /* Adjust size as needed */
-    height: 24px; /* Adjust size as needed */
+    width: 36px; /* Adjust size as needed */
+    height: 36px; /* Adjust size as needed */
 }
