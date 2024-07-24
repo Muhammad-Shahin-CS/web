@@ -1,9 +1,25 @@
+body {
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #000; /* Text color */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
 h1 {
     color: green;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .social-links a img {
-    width: 11px; /* Standard icon size */
-    height: 11px; /* Standard icon size */
+    width: 24px; /* Standard icon size */
+    height: 24px; /* Standard icon size */
     margin: 0 10px; /* Adjust spacing as needed */
 }
