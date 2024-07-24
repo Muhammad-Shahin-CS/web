@@ -1,3 +1,9 @@
 h1 {
-    color: rgb(255, 0, 238);
+    color: green;
+}
+
+.social-links a img {
+    width: 32px; /* Adjust size as needed */
+    height: 32px; /* Adjust size as needed */
+    margin: 0 10px; /* Adjust spacing as needed */
 }
