@@ -153,3 +153,8 @@ nav {
     width: 4px;
     height: 4px;
 }
+  
+.social-icon img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+}
