@@ -155,8 +155,8 @@ nav {
     background: rgb(237, 237, 237); 
     position: fixed;
     right: 10px;
-    top: 5%;
-    margin-bottom: 130%; 
+    top: 9%;
+    margin-bottom: 132%; 
     transform: translateY(0);
     flex-direction: column;
     gap: 8px;
@@ -169,9 +169,7 @@ nav {
 
 /* Media queries for responsiveness */
 @media (max-width: 600px) {
-    .nav-center {
-        flex-direction: column; /* Stack items vertically on small screens */
-    }
+ 
     
     .profile-photo {
         width: 120px;
