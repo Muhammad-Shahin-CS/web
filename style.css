@@ -154,7 +154,7 @@ nav {
     border-radius: 20px; 
     background: rgb(237, 237, 237); 
     position: fixed;
-    right: 20px;
+    right: 420px;
     top: 32%;
     transform: translateY(-50%);
     display: flex;
