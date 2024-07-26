@@ -155,7 +155,7 @@ nav {
     background: rgb(237, 237, 237); 
     position: fixed;
     right: 120px;
-    top: 32%;
+    top: 22%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
