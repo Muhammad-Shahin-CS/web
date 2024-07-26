@@ -155,7 +155,7 @@ nav {
     position: fixed;
     right: 10px;
     top: 5%;
-    margin-bottom: 135%; 
+    margin-bottom: 125%; 
     transform: translateY(0);
     flex-direction: column;
     gap: 8px;
