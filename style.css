@@ -1,5 +1,6 @@
+/* General styles for larger screens */
 body {
-    background: url('images/background.jpg') no-repeat center center fixed;
+    background: url('static/images/background.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +8,32 @@ body {
     color: #000; /* Set text color to black */
     margin-bottom: 20px; 
 }
+
+/* Styles for devices with a max width of 768px (tablets and mobile devices) */
+@media (max-width: 768px) {
+    body {
+        background-size: auto; /* Adjust background size for smaller screens */
+    }
+
+    /* Additional mobile styles */
+    .container {
+        width: 90%; /* Adjust container width */
+        margin: 0 auto; /* Center the container */
+        padding: 10px; /* Add padding for better spacing */
+    }
+}
+
+/* Styles for devices with a max width of 480px (small mobile devices) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .container {
+        width: 95%; /* Further adjust container width for small screens */
+    }
+}
+
 
 nav {
     background-color: rgba(0, 0, 0, 0.8);
