@@ -21,7 +21,8 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Adjust space between items as needed */ 
+    gap: 10px; /* Adjust space between items as needed */
+    flex-direction: row; /* Ensure items are in a row by default */
 }
 
 .nav-center a {
@@ -155,7 +156,7 @@ nav {
     position: fixed;
     right: 10px;
     top: 5%;
-    margin-bottom: 125%; 
+    margin-bottom: 130%; 
     transform: translateY(0);
     flex-direction: column;
     gap: 8px;
@@ -169,7 +170,7 @@ nav {
 /* Media queries for responsiveness */
 @media (max-width: 600px) {
     .nav-center {
-        flex-direction: column;
+        flex-direction: column; /* Stack items vertically on small screens */
     }
     
     .profile-photo {
