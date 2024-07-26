@@ -1,6 +1,6 @@
-/* General styles for larger screens */
+/* Base styles */
 body {
-    background: url('static/images/background.jpg') no-repeat center center fixed;
+    background: url('images/background.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,32 +8,6 @@ body {
     color: #000; /* Set text color to black */
     margin-bottom: 20px; 
 }
-
-/* Styles for devices with a max width of 768px (tablets and mobile devices) */
-@media (max-width: 768px) {
-    body {
-        background-size: auto; /* Adjust background size for smaller screens */
-    }
-
-    /* Additional mobile styles */
-    .container {
-        width: 90%; /* Adjust container width */
-        margin: 0 auto; /* Center the container */
-        padding: 10px; /* Add padding for better spacing */
-    }
-}
-
-/* Styles for devices with a max width of 480px (small mobile devices) */
-@media (max-width: 480px) {
-    body {
-        font-size: 14px; /* Adjust font size */
-    }
-
-    .container {
-        width: 95%; /* Further adjust container width for small screens */
-    }
-}
-
 
 nav {
     background-color: rgba(0, 0, 0, 0.8);
@@ -44,14 +18,15 @@ nav {
 
 .nav-center {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 15px; /* Adjust space between items as needed */ 
+    gap: 10px; /* Adjust space between items as needed */ 
 }
 
 .nav-center a {
     color: #fff;
-    padding: 10px 20px;
+    padding: 8px 12px;
     text-decoration: none;
     display: inline-block;
     border-radius: 7px;  
@@ -67,9 +42,9 @@ nav {
 }
 
 .dropbtn {
-    background-color:rgb(77, 77, 77);
+    background-color: rgb(77, 77, 77);
     color: white;
-    padding: 10px 20px;
+    padding: 8px 12px;
     border: none;
     cursor: pointer;
     border-radius: 7px;  
@@ -83,7 +58,6 @@ nav {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 10px;  
-    /* margin-top: 11.9px;  */
 }
 
 .dropdown-content a {
@@ -106,28 +80,27 @@ nav {
 }
 
 .container {
-    width:80%;
+    width: 90%;
     margin: auto;
-    /* overflow: hidden; */
 }
 
 .header {
     text-align: center;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .profile-container {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    gap: 15px;
 }
 
 .profile-photo {
-    width: 200px;
-    height: 200px;
-    border-radius:50%;
-    border: 6px solid #000; /* Add border to profile image */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #000; /* Add border to profile image */
 }
 
 .profile-info {
@@ -135,24 +108,24 @@ nav {
 }
 
 .profile-info h1 {
-    font-size: 3em;
+    font-size: 2em;
     margin: 0;
     font-weight: bold; /* Make name bold */
 }
 
 .profile-info p {
-    font-size: 1.2em;
-    line-height: 1.6;
+    font-size: 1em;
+    line-height: 1.4;
     margin-top: 10px;
 }
 
 .skills, .projects {
     background: rgba(255, 255, 255, 0.9);
     color: #000;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 18px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 .skills h2, .projects h2 {
@@ -166,30 +139,68 @@ nav {
 
 .skills li, .projects li {
     background: #f1f1f1;
-    margin-bottom: 10px;
-    padding: 10px;
+    margin-bottom: 8px;
+    padding: 8px;
     border-radius: 4px;
 }
 
 .social-box {
-    width: 30px;
-    height: 294;
+    width: 50px;
     padding: 10px;
     display: flex;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); 
     border-radius: 20px; 
     background: rgb(237, 237, 237); 
     position: fixed;
-    right: 120px;
-    top: 22%;
-    transform: translateY(-50%);
-    display: flex;
+    right: 10px;
+    bottom: 10px;
+    transform: translateY(0);
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
- 
+
 .social-icon img {
-    width: 36px; /* Adjust size as needed */
-    height: 36px; /* Adjust size as needed */
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    .nav-center {
+        flex-direction: column;
+    }
+    
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-info h1 {
+        font-size: 1.5em;
+    }
+
+    .profile-info p {
+        font-size: 0.9em;
+    }
+
+    .skills, .projects {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .skills li, .projects li {
+        padding: 6px;
+    }
+
+    .social-box {
+        width: 40px;
+        right: 5px;
+        bottom: 5px;
+    }
+
+    .social-icon img {
+        width: 24px;
+        height: 24px;
+    }
 }
